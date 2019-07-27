@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:flow="http://www.springframework.org/schema/webflow-config"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:jms="http://www.springframework.org/schema/jms"
+       xmlns:lang="http://www.springframework.org/schema/lang"
+       xmlns:osgi="http://www.springframework.org/schema/osgi"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/mvc
+                     http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd
+  
+
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+          http://www.springframework.org/schema/webflow-config http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.0.xsd
+          http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd
+          http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms-3.2.xsd
+          http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-3.2.xsd
+          http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi-1.2.xsd
+          http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+          http://www.springframework.org/schema/util
+         http://www.springframework.org/schema/mvc
+         http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+
+
+        <context:component-scan base-package="controller"></context:component-scan>
+        <mvc:annotation-driven/>
+        <context:annotation-config/>
+    <mvc:resources mapping="/resources/**" location="/resources/"></mvc:resources>    
+   
+    <bean id="viewResolver"    class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+     <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">  
+    <property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>  
+    <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"></property>  
+    <property name="username" value="system"></property>  
+    <property name="password" value="tiger"></property>  
+    </bean>  
+
+     <bean id="jt" class="org.springframework.jdbc.core.JdbcTemplate">  
+    <property name="dataSource" ref="ds"></property>  
+    </bean> 
+    <bean id="st" class="dao.StateDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>   
+    <bean id="ct" class="dao.CityDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>   
+     <bean id="lt" class="dao.LocationDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>  
+    <bean id="qt" class="dao.QualificationDao">  
+    <property name="template" ref="jt"></property>  
+    </bean> 
+    <bean id="ldt" class="dao.LeadSourceDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>   
+     <bean id="spt" class="dao.SpecializationDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>   
+    <bean id="tt" class="dao.TechnologyDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>   
+     <bean id="pt" class="dao.ProgramDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>
+    <bean id="mt" class="dao.ModuleDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>  
+     <bean id="ttd" class="dao.TrainingTopicsDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>  
+     <bean id="tcd" class="dao.TopicContentDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>   
+     <bean id="ldtt" class="dao.LeadDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>   
+     <bean id="stdt" class="dao.StudentProfileDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>   
+    <bean id="tfs" class="dao.TrainingFeesDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>   
+    <bean id="fmd" class="dao.FeeModeDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>   
+    <bean id="aad" class="dao.AllAdmissionDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>   
+     <bean id="rdd" class="dao.RegistrationDetailsDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>   
+    <bean id="rqd" class="dao.RegistrationQualificationDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>   
+     <bean id="spd" class="dao.StudentPaymentDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>   
+    <bean id="aed" class="dao.AllEnquiryDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>   
+    <bean id="eqd" class="dao.EnquiryQualificationDao">  
+    <property name="template" ref="jt"></property>  
+    </bean> 
+     <bean id="erd" class="dao.EnquiryResultDao">  
+    <property name="template" ref="jt"></property>  
+    </bean> 
+    <bean id="mdd" class="dao.MentorDetailsDao">  
+    <property name="template" ref="jt"></property>  
+    </bean>
+    <bean id="ald" class="dao.AdminLoginDao">  
+    <property name="template" ref="jt"></property>  
+    </bean> 
+     <bean id="mad" class="dao.MentorAssignDao">  
+    <property name="template" ref="jt"></property>  
+    </bean> 
+  </beans>

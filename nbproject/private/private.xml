@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/web/WEB-INF/common/CounselorMenu.jsp</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/web/WEB-INF/dispatcher-servlet.xml</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/web/resources/js/City.js</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/model/StudentPayment.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/dao/MentorAssignDao.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/model/RegistrationDetails.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/model/AllAdmission.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/web/WEB-INF/common/footer.jsp</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/web/WEB-INF/common/files.jsp</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/web/index.jsp</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/model/Login.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/model/Lead.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/model/StudentProfile.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/dao/AllAdmissionDao.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/controller/AdmissionController.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/model/EnquiryQualification.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/web/WEB-INF/Master/State.jsp</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/web/WEB-INF/Login/Login.jsp</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/controller/MasterController.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/web/WEB-INF/Login/SetPassword.jsp</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/dao/StateDao.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/controller/LoginController.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/web/WEB-INF/spring-servlet.xml</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/web/WEB-INF/common/AccountantMenu.jsp</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/dao/CityDao.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/dao/AdminLoginDao.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/web/WEB-INF/applicationContext.xml</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/model/City.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/controller/DashboardController.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/web/WEB-INF/Master/City.jsp</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/src/java/model/State.java</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/web/WEB-INF/common/headersandMenu.jsp</file>
+            <file>file:/C:/Users/panda/Documents/NetBeansProjects/CRM_Student/web/WEB-INF/Leads/AllLeads.jsp</file>
+        </group>
+    </open-files>
+</project-private>
